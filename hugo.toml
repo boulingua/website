@@ -16,7 +16,7 @@ enableEmoji = false
 [params]
   author = "S. Le Boulanger"
   description = "Multilingual Teaching · EFL · FLE · DaF"
-  keywords = "language teaching,EFL,FLE,DaF,OER,Bildungsplan,CEFR,curriculum"
+  keywords = "language teaching,EFL,FLE,DaF,OER,CEFR,curriculum"
   info = ["Multilingual Teaching Platform", "EFL · FLE · DaF · Ressourcen"]
   avatarURL = "images/avatar.png"
   favicon_32 = "images/avatar.png"

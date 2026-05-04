@@ -9,7 +9,7 @@ date: 2025-01-01
 
 ## Platforms
 
-- EFL BW — [boulingua.github.io/efl/](https://boulingua.github.io/efl/)
-- FLE BW — [boulingua.github.io/fle/](https://boulingua.github.io/fle/)
-- DaF Goethe — [boulingua.github.io/daf/](https://boulingua.github.io/daf/)
+- EFL — [boulingua.github.io/efl/](https://boulingua.github.io/efl/)
+- FLE — [boulingua.github.io/fle/](https://boulingua.github.io/fle/)
+- DaF — [boulingua.github.io/daf/](https://boulingua.github.io/daf/)
 - Ressourcen-Hub — [boulingua.github.io/ressources/](https://boulingua.github.io/ressources/)

@@ -1,7 +1,5 @@
 /* boulingua design system overrides for hugo-coder */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
-
 :root {
   --boulingua-accent: #1a73e8;
   --boulingua-accent-hover: #0b57d0;
@@ -17,27 +15,6 @@
 [data-theme="dark"] {
   --boulingua-accent: #79b8ff;
   --boulingua-accent-hover: #b8d4fd;
-}
-
-html,
-body {
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-}
-
-code, pre, kbd, samp,
-.navigation .navigation-title,
-.navigation .navigation-list .navigation-item a {
-  font-family: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
 }
 
 .navigation .navigation-title {
@@ -64,12 +41,10 @@ a:hover {
   color: var(--boulingua-accent-hover);
 }
 
-/* Home avatar spacing */
 .avatar img {
   margin-bottom: 1.5rem;
 }
 
-/* Subtle card-like hover for h2 sections on Platforms page */
 main.content h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.3rem;
@@ -81,7 +56,55 @@ main.content h2:hover {
   border-bottom-color: var(--boulingua-accent);
 }
 
-/* Footer tightening */
 .footer {
   font-size: 0.9rem;
+}
+
+/* ── Philosophy panel grid ────────────────────────── */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.philosophy-panel {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.philosophy-panel:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  border-color: var(--boulingua-accent);
+}
+
+.philosophy-panel .panel-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.philosophy-panel .panel-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+}
+
+.philosophy-panel h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.philosophy-panel p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
