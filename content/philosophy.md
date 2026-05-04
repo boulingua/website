@@ -3,7 +3,7 @@ title: "Philosophy"
 date: 2025-01-01
 ---
 
-Five principles shape every decision behind boulingua.
+Six principles shape every decision behind boulingua.
 
 <div class="philosophy-grid">
 
@@ -66,6 +66,17 @@ Five principles shape every decision behind boulingua.
     </div>
     <h3>Transparency</h3>
     <p>The entire platform is open source. Every repository is public on GitHub. Teachers can inspect, fork, and adapt anything — a unit, a chapter, a whole site.</p>
+  </div>
+
+  <div class="philosophy-panel">
+    <div class="panel-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 4 6v6c0 4.5 3.2 8.4 8 9 4.8-.6 8-4.5 8-9V6l-8-3z"/>
+        <path d="M9 12.5 11 14.5 15 10.5"/>
+      </svg>
+    </div>
+    <h3>Privacy</h3>
+    <p>No accounts, no cookies, no third-party trackers. Visitor counts are gathered through a self-hosted, cookie-free analytics endpoint that records nothing identifying — no IP addresses stored, no cross-site profiles. Teachers and students can use boulingua without leaving a trace.</p>
   </div>
 
 </div>
