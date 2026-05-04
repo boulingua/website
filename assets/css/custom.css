@@ -45,6 +45,14 @@ code, pre, kbd, samp,
   letter-spacing: 0.02em;
 }
 
+.navigation .navigation-title::before {
+  content: "#";
+}
+
+.home-title {
+  font-style: italic;
+}
+
 a,
 .navigation .navigation-list .navigation-item a:hover,
 .social-icons a:hover,
