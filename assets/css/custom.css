@@ -1,22 +1,38 @@
-/* boulingua design system overrides for hugo-coder */
+/* boulingua design system overrides for hugo-coder
+   Coder toggles dark mode via the `colorscheme-dark` class on <body>;
+   `colorscheme-auto` defers to prefers-color-scheme until the user clicks the
+   toggle. We support both. */
 
 :root {
   --boulingua-accent: #1a73e8;
   --boulingua-accent-hover: #0b57d0;
+  --boulingua-panel-border: rgba(0, 0, 0, 0.12);
+  --boulingua-panel-border-hover: var(--boulingua-accent);
+  --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --boulingua-rule: rgba(0, 0, 0, 0.12);
 }
 
+/* Dark via OS preference when Coder is in auto mode */
 @media (prefers-color-scheme: dark) {
-  :root {
+  body.colorscheme-auto {
     --boulingua-accent: #79b8ff;
     --boulingua-accent-hover: #b8d4fd;
+    --boulingua-panel-border: rgba(255, 255, 255, 0.16);
+    --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+    --boulingua-rule: rgba(255, 255, 255, 0.16);
   }
 }
 
-[data-theme="dark"] {
+/* Dark when Coder JS has applied colorscheme-dark explicitly */
+body.colorscheme-dark {
   --boulingua-accent: #79b8ff;
   --boulingua-accent-hover: #b8d4fd;
+  --boulingua-panel-border: rgba(255, 255, 255, 0.16);
+  --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  --boulingua-rule: rgba(255, 255, 255, 0.16);
 }
 
+/* ── Navbar brand ───────────────────────────────── */
 .navigation .navigation-title {
   text-transform: lowercase;
   letter-spacing: 0.02em;
@@ -26,41 +42,52 @@
   content: "#";
 }
 
+/* ── Home title (under avatar) ──────────────────── */
 .home-title {
   font-style: italic;
 }
 
-a,
-.navigation .navigation-list .navigation-item a:hover,
-.social-icons a:hover,
-.tags-overview .tag-item:hover {
+/* ── Accent links ───────────────────────────────── */
+a {
   color: var(--boulingua-accent);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--boulingua-accent-hover);
 }
 
+.social-icons a:hover,
+.tags-overview .tag-item:hover,
+.navigation .navigation-list .navigation-item a:hover {
+  color: var(--boulingua-accent);
+}
+
+/* ── Avatar spacing ─────────────────────────────── */
 .avatar img {
   margin-bottom: 1.5rem;
 }
 
-main.content h2 {
+/* ── H2 rule on content pages ───────────────────── */
+main.content h2,
+.content h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid var(--boulingua-rule);
   transition: border-color 0.2s ease;
 }
 
-main.content h2:hover {
+main.content h2:hover,
+.content h2:hover {
   border-bottom-color: var(--boulingua-accent);
 }
 
+/* ── Footer ─────────────────────────────────────── */
 .footer {
   font-size: 0.9rem;
 }
 
-/* ── Philosophy panel grid ────────────────────────── */
+/* ── Philosophy panel grid ──────────────────────── */
 .philosophy-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -69,26 +96,28 @@ main.content h2:hover {
 }
 
 .philosophy-panel {
-  border: 1px solid rgba(128, 128, 128, 0.25);
+  border: 1px solid var(--boulingua-panel-border);
   border-radius: 8px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  background: transparent;
   transition: box-shadow 0.2s ease, transform 0.2s ease,
     border-color 0.2s ease;
 }
 
 .philosophy-panel:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--boulingua-panel-shadow);
   transform: translateY(-2px);
-  border-color: var(--boulingua-accent);
+  border-color: var(--boulingua-panel-border-hover);
 }
 
 .philosophy-panel .panel-icon {
   width: 44px;
   height: 44px;
   flex-shrink: 0;
+  color: inherit;
 }
 
 .philosophy-panel .panel-icon svg {
@@ -96,6 +125,12 @@ main.content h2:hover {
   height: 100%;
   stroke: currentColor;
   fill: none;
+}
+
+/* The small filled dots inside icons opt back into the current text color */
+.philosophy-panel .panel-icon svg [fill="currentColor"],
+.philosophy-panel .panel-icon svg circle[fill="currentColor"] {
+  fill: currentColor;
 }
 
 .philosophy-panel h3 {
