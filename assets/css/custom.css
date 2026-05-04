@@ -143,3 +143,10 @@ main.content h2:hover,
   font-size: 0.95rem;
   line-height: 1.55;
 }
+
+.home-title em {
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
