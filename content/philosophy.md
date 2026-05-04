@@ -71,12 +71,14 @@ Six principles shape every decision behind boulingua.
   <div class="philosophy-panel">
     <div class="panel-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 3 4 6v6c0 4.5 3.2 8.4 8 9 4.8-.6 8-4.5 8-9V6l-8-3z"/>
-        <path d="M9 12.5 11 14.5 15 10.5"/>
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M3 12h18"/>
+        <path d="M12 3a14 14 0 0 1 0 18"/>
+        <path d="M12 3a14 14 0 0 0 0 18"/>
       </svg>
     </div>
-    <h3>Privacy</h3>
-    <p>No accounts, no cookies, no third-party trackers. Visitor counts are gathered through a self-hosted, cookie-free analytics endpoint that records nothing identifying — no IP addresses stored, no cross-site profiles. Teachers and students can use boulingua without leaving a trace.</p>
+    <h3>Multilingualism</h3>
+    <p>Languages do not exist in isolation in a learner's head. Boulingua treats English, French, and German as a connected system — shared metalinguistic vocabulary, cross-references between cognates and false friends, units that build on what learners already know from another language. The goal is multilingual competence, not three separate monolingualisms.</p>
   </div>
 
 </div>
