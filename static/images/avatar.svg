@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="boulingua logo">
+  <title>boulingua</title>
+  <circle cx="100" cy="100" r="96" fill="#1a73e8"/>
+  <g fill="#ffffff" font-family="JetBrains Mono, ui-monospace, monospace" font-weight="700">
+    <text x="100" y="118" text-anchor="middle" font-size="92" letter-spacing="-2">b</text>
+    <circle cx="148" cy="76" r="8"/>
+  </g>
+</svg>
