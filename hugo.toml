@@ -2,8 +2,10 @@ baseURL = "https://boulingua.github.io/website/"
 title = "boulingua"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 20
 enableEmoji = false
+
+[pagination]
+  pagerSize = 20
 
 [markup.highlight]
   noClasses = false
