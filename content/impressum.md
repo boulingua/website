@@ -7,20 +7,20 @@ slug: "impressum"
 ## Angaben gemäß § 5 TMG
 
 S. Le Boulanger
-[PLACEHOLDER-STRASSE]
-[PLACEHOLDER-PLZ-ORT]
-[PLACEHOLDER-LAND]
+Albert-Einstein-Straße 47
+02977 Hoyerswerda
+Deutschland
 
 ## Kontakt
 
-E-Mail: [PLACEHOLDER-EMAIL]
+E-Mail: 277736839+s-leboulanger@users.noreply.github.com
 
 ## Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV
 
 S. Le Boulanger
-[PLACEHOLDER-STRASSE]
-[PLACEHOLDER-PLZ-ORT]
-[PLACEHOLDER-LAND]
+Albert-Einstein-Straße 47
+02977 Hoyerswerda
+Deutschland
 
 ## Haftungsausschluss
 

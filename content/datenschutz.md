@@ -10,11 +10,11 @@ Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der
 Datenschutz-Grundverordnung (DSGVO) ist:
 
 S. Le Boulanger
-[PLACEHOLDER-STRASSE]
-[PLACEHOLDER-PLZ-ORT]
-[PLACEHOLDER-LAND]
+Albert-Einstein-Straße 47
+02977 Hoyerswerda
+Deutschland
 
-E-Mail: [PLACEHOLDER-EMAIL]
+E-Mail: 277736839+s-leboulanger@users.noreply.github.com
 
 ## 2. Hosting
 
