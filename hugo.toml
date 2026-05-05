@@ -50,18 +50,23 @@ enableEmoji = false
   url = "philosophy/"
 
 [[menu.main]]
-  name = "Contact"
+  name = "References"
   weight = 4
+  url = "references/"
+
+[[menu.main]]
+  name = "Contact"
+  weight = 5
   url = "contact/"
 
 [[menu.main]]
   name = "Impressum"
-  weight = 5
+  weight = 6
   url = "impressum/"
 
 [[menu.main]]
   name = "Datenschutz"
-  weight = 6
+  weight = 7
   url = "datenschutz/"
 
 [module]
