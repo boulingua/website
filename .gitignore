@@ -13,3 +13,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+*.tmp
+*.log
+*~
+*.bak
+*.orig
