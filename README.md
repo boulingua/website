@@ -39,29 +39,29 @@ Then open <http://localhost:1313/website/>.
 
 ## Per-language accent colours
 
-Boulingua is one platform with many languages. Each language project has **its own signature accent colour** and **its own abstract icon**, so it is recognisable on its own while still part of the whole. Every accent is **flag-safe** (the hue does not appear in that language's national flag), mutually distinct (≥20° apart on the hue wheel), kept clear of the boulingua hub blue `#1A73E8`, and contrast-checked for light and dark themes. The shared CEFR ramp (A `#4CAF50`, B `#1A73E8`, C `#8E24AA`) is independent of these.
+Boulingua is one platform with many languages. Each language project has **its own signature accent colour**, shown as a **pentagon** in that colour, so it is recognisable on its own while still part of the whole. Every accent is **flag-safe** (the hue does not appear in that language's national flag), mutually distinct (≥20° apart on the hue wheel), kept clear of the boulingua hub blue `#1A73E8`, and contrast-checked for light and dark themes. The shared CEFR ramp (A `#4CAF50`, B `#1A73E8`, C `#8E24AA`) is independent of these.
 
 The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same values drive the sites' CSS and the `slidegen` / `sheetgen` LaTeX templates. See the [Design & colours](https://boulingua.github.io/website/design/) page for a visual overview.
 
-| Code | Language | Icon | Light accent | Dark accent |
-|------|----------|------|--------------|-------------|
-| `daf` | German | hexagon | `#1D87A7` | `#7ECEE7` |
-| `efl` | English | circle | `#248D19` | `#89E77E` |
-| `fle` | French | square | `#4B8D19` | `#ACE77E` |
-| `afl` | Arabic | pentagon | `#4A23C7` | `#977EE7` |
-| `cfl` | Chinese | triangle | `#2334C7` | `#7E89E7` |
-| `ele` | Spanish | diamond | `#198D81` | `#7EE7DC` |
-| `gfl` | Greek | U-shape | `#C74A23` | `#E7977E` |
-| `ils` | Italian | ring | `#8023C7` | `#B97EE7` |
-| `jfl` | Japanese | rounded square | `#867B18` | `#E7DC7E` |
-| `lle` | Latin | semicircle | `#C72334` | `#E77E89` |
-| `nsf` | Norwegian | star | `#6D8618` | `#CEE77E` |
-| `nvt` | Dutch | plus | `#198D34` | `#7EE797` |
-| `pfl` | Polish | chevron | `#AD701F` | `#E7B97E` |
-| `ple` | Portuguese | trapezoid | `#B723C7` | `#DC7EE7` |
-| `rki` | Russian | octagon | `#198D5B` | `#7EE7B9` |
-| `tfl` | Turkish | arch | `#C7236A` | `#E77EAC` |
-| `ufl` | Ukrainian | heptagon | `#C723A1` | `#E77ECE` |
+| Code | Language | Light accent | Dark accent |
+|------|----------|--------------|-------------|
+| `daf` | German | `#1D87A7` | `#7ECEE7` |
+| `efl` | English | `#248D19` | `#89E77E` |
+| `fle` | French | `#4B8D19` | `#ACE77E` |
+| `afl` | Arabic | `#4A23C7` | `#977EE7` |
+| `cfl` | Chinese | `#2334C7` | `#7E89E7` |
+| `ele` | Spanish | `#198D81` | `#7EE7DC` |
+| `gfl` | Greek | `#C74A23` | `#E7977E` |
+| `ils` | Italian | `#8023C7` | `#B97EE7` |
+| `jfl` | Japanese | `#867B18` | `#E7DC7E` |
+| `lle` | Latin | `#C72334` | `#E77E89` |
+| `nsf` | Norwegian | `#6D8618` | `#CEE77E` |
+| `nvt` | Dutch | `#198D34` | `#7EE797` |
+| `pfl` | Polish | `#AD701F` | `#E7B97E` |
+| `ple` | Portuguese | `#B723C7` | `#DC7EE7` |
+| `rki` | Russian | `#198D5B` | `#7EE7B9` |
+| `tfl` | Turkish | `#C7236A` | `#E77EAC` |
+| `ufl` | Ukrainian | `#C723A1` | `#E77ECE` |
 
 ## Licence
 
