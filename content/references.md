@@ -53,6 +53,17 @@ Internationale, TV5Monde, and the Goethe-Institut's freely
 published practice exercises. No commercial textbook material
 is paraphrased or reproduced.
 
+## Use of LLM tools
+
+Portions of this project were prepared with assistance from large
+language model tooling for narrowly defined, non-authorial tasks:
+copyediting, prose smoothing, Markdown/LaTeX formatting, scaffolding of
+boilerplate files (CI configs, build scripts), code refactoring. The
+tools used were Chat AI, the LLM service of KISSKI (GWDG), and a
+self-hosted Mistral Small (24B, Apache-2.0) run locally via Ollama and
+the ollamar R package — local inference only, with no data sent to
+third parties for the self-hosted model.
+
 ## Licensing
 
 - Website code (Quarto config, Hugo templates, Lua filters,
