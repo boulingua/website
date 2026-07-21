@@ -47,8 +47,13 @@ enableEmoji = false
   url = "platforms/"
 
 [[menu.main]]
-  name = "Philosophy"
+  name = "Design"
   weight = 3
+  url = "design/"
+
+[[menu.main]]
+  name = "Philosophy"
+  weight = 4
   url = "philosophy/"
 
 [[menu.main]]
