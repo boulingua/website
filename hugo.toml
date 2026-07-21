@@ -26,6 +26,8 @@ enableEmoji = false
   hideCredits = false
   since = 2025
   colorScheme = "auto"
+  # Disable the theme's floating toggle; the navbar #dark-mode-toggle is the single control.
+  hideColorSchemeToggle = true
   customCSS = ["css/custom.css"]
 
 [[params.social]]
