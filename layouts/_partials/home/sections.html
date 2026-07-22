@@ -1,11 +1,5 @@
 {{/* boulingua home: platform lead + sister-site cards (accent per language). */}}
 {{- $a := dict -}}{{- range site.Data.accents -}}{{- $a = merge $a (dict .code .accent) -}}{{- end -}}
-<section class="container home-lead">
-  <p class="home-lead-text">A free, openly licensed teaching platform for the German
-  Gesamtschule and CEFR learners — curriculum-aligned courses, ready-to-use materials,
-  and a curated resource hub. Open, ad-free, and built for the classroom and for
-  self-study.</p>
-</section>
 <section class="container home-cards-wrap">
   <div class="home-cards">
     <a class="home-card" style="--c:{{ index $a "efl" }}" href="https://boulingua.github.io/efl/">
