@@ -1,0 +1,20 @@
+# Geographic anchor + status for each boulingua language, used by the
+# {{< worldmap >}} shortcode. Colours come from data/accents.yaml (by code).
+# status: active (live site, linked) | upcoming (scaffolded, "bald").
+- {code: efl, lang: English,    lat: 52.0,  lon: -1.5,  status: active,   url: "https://boulingua.github.io/efl/"}
+- {code: fle, lang: French,     lat: 47.0,  lon: 2.5,   status: active,   url: "https://boulingua.github.io/fle/"}
+- {code: daf, lang: German,     lat: 51.0,  lon: 10.5,  status: active,   url: "https://boulingua.github.io/daf/"}
+- {code: ele, lang: Spanish,    lat: 40.2,  lon: -3.7,  status: upcoming, url: "https://github.com/boulingua/ele"}
+- {code: ple, lang: Portuguese, lat: 39.5,  lon: -8.2,  status: upcoming, url: "https://github.com/boulingua/ple"}
+- {code: ils, lang: Italian,    lat: 43.0,  lon: 12.5,  status: upcoming, url: "https://github.com/boulingua/ils"}
+- {code: lle, lang: Latin,      lat: 41.9,  lon: 15.5,  status: upcoming, url: "https://github.com/boulingua/lle"}
+- {code: gfl, lang: Greek,      lat: 39.0,  lon: 23.0,  status: upcoming, url: "https://github.com/boulingua/gfl"}
+- {code: nvt, lang: Dutch,      lat: 52.3,  lon: 5.5,   status: upcoming, url: "https://github.com/boulingua/nvt"}
+- {code: nsf, lang: Norwegian,  lat: 61.0,  lon: 8.5,   status: upcoming, url: "https://github.com/boulingua/nsf"}
+- {code: pfl, lang: Polish,     lat: 52.0,  lon: 19.5,  status: upcoming, url: "https://github.com/boulingua/pfl"}
+- {code: ufl, lang: Ukrainian,  lat: 49.0,  lon: 32.0,  status: upcoming, url: "https://github.com/boulingua/ufl"}
+- {code: rki, lang: Russian,    lat: 56.0,  lon: 45.0,  status: upcoming, url: "https://github.com/boulingua/rki"}
+- {code: tfl, lang: Turkish,    lat: 39.0,  lon: 35.0,  status: upcoming, url: "https://github.com/boulingua/tfl"}
+- {code: afl, lang: Arabic,     lat: 24.0,  lon: 45.0,  status: upcoming, url: "https://github.com/boulingua/afl"}
+- {code: cfl, lang: Chinese,    lat: 35.0,  lon: 104.0, status: upcoming, url: "https://github.com/boulingua/cfl"}
+- {code: jfl, lang: Japanese,   lat: 36.5,  lon: 138.0, status: upcoming, url: "https://github.com/boulingua/jfl"}

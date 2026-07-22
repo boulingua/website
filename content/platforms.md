@@ -5,7 +5,12 @@ date: 2025-01-01
 
 Boulingua consists of four sister sites. Three deliver curriculum-aligned
 teaching units for English, French, and German as a foreign language. The
-fourth is a curated hub of free teaching resources.
+fourth is a curated hub of free teaching resources. Beyond these, a growing
+family of languages is being scaffolded — each with its own signature accent
+colour. Hover a marker to see the language; the three live courses link straight
+to their site.
+
+{{< worldmap >}}
 
 ## EFL — English as a Foreign Language
 
