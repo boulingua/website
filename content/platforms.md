@@ -7,8 +7,10 @@ Boulingua consists of four sister sites. Three deliver curriculum-aligned
 teaching units for English, French, and German as a foreign language. The
 fourth is a curated hub of free teaching resources. Beyond these, a growing
 family of languages is being scaffolded — each with its own signature accent
-colour. Hover a marker to see the language; the three live courses link straight
-to their site.
+colour. The map below shades every country by the share of its inhabitants who
+speak a boulingua language, with a coloured dot on each capital; the three live
+courses pulse and link straight to their site. Hover a country or capital for
+detail.
 
 {{< worldmap >}}
 

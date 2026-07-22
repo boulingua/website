@@ -15,6 +15,7 @@
 - {code: ufl, lang: Ukrainian,  lat: 49.0,  lon: 32.0,  status: upcoming, url: "https://github.com/boulingua/ufl"}
 - {code: rki, lang: Russian,    lat: 56.0,  lon: 45.0,  status: upcoming, url: "https://github.com/boulingua/rki"}
 - {code: tfl, lang: Turkish,    lat: 39.0,  lon: 35.0,  status: upcoming, url: "https://github.com/boulingua/tfl"}
-- {code: afl, lang: Arabic,     lat: 24.0,  lon: 45.0,  status: upcoming, url: "https://github.com/boulingua/afl"}
+- {code: afl, lang: Arabic,     lat: 33.5,  lon: 36.3,  status: upcoming, url: "https://github.com/boulingua/afl"}   # Damascus
 - {code: cfl, lang: Chinese,    lat: 35.0,  lon: 104.0, status: upcoming, url: "https://github.com/boulingua/cfl"}
 - {code: jfl, lang: Japanese,   lat: 36.5,  lon: 138.0, status: upcoming, url: "https://github.com/boulingua/jfl"}
+- {code: pfa, lang: Persian,    lat: 32.4,  lon: 53.7,  status: upcoming, url: "https://github.com/boulingua", colour: "#B5892B"}
