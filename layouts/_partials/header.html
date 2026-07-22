@@ -1,8 +1,10 @@
 <nav class="navigation">
   <section class="container">
     {{ with .Site }}
-    <a class="navigation-title" href="{{ absLangURL "" }}">
-      {{ .Title }}
+    <a class="navigation-title" href="{{ absLangURL "" }}" aria-label="{{ .Title }} — home">
+      <img class="navigation-brand-icon" src="{{ "images/avatar.png" | relURL }}"
+           alt="" width="30" height="30" />
+      <span class="navigation-brand-word">{{ .Title }}</span>
     </a>
     {{ end }}
     {{ if or .Site.Menus.main hugo.IsMultilingual }}
@@ -13,9 +15,24 @@
       <ul class="navigation-list">
         {{ with .Site.Menus.main}}
           {{ range sort . }}
-            <li class="navigation-item">
-              <a class="navigation-link {{ .Params.class }}" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
-            </li>
+            {{ if .HasChildren }}
+              <li class="navigation-item has-dropdown">
+                {{ if and .URL (ne .URL "#") }}
+                  <a class="navigation-link navigation-group" href="{{ .URL | relLangURL }}">{{ .Name }} <span class="caret" aria-hidden="true">▾</span></a>
+                {{ else }}
+                  <span class="navigation-link navigation-group" tabindex="0" role="button" aria-haspopup="true">{{ .Name }} <span class="caret" aria-hidden="true">▾</span></span>
+                {{ end }}
+                <ul class="navigation-dropdown">
+                  {{ range sort .Children }}
+                    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ else }}
+              <li class="navigation-item">
+                <a class="navigation-link {{ .Params.class }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
           {{ end }}
         {{ end }}
         {{ if hugo.IsMultilingual }}

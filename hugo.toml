@@ -36,44 +36,53 @@ enableEmoji = false
   weight = 1
   url = "https://github.com/boulingua"
 
-[[menu.main]]
-  name = "About"
-  weight = 1
-  url = "about/"
-
+# Top-level nav grouped into three: the products (Platforms), everything
+# about the project (About ▾), and the formal pages (Legal ▾).
 [[menu.main]]
   name = "Platforms"
-  weight = 2
+  weight = 1
   url = "platforms/"
 
 [[menu.main]]
-  name = "Design"
-  weight = 3
-  url = "design/"
-
+  identifier = "about"
+  name = "About"
+  weight = 2
+  url = "about/"
 [[menu.main]]
+  parent = "about"
   name = "Philosophy"
-  weight = 4
+  weight = 1
   url = "philosophy/"
-
 [[menu.main]]
+  parent = "about"
+  name = "Design & colours"
+  weight = 2
+  url = "design/"
+[[menu.main]]
+  parent = "about"
   name = "References"
-  weight = 4
+  weight = 3
   url = "references/"
 
 [[menu.main]]
+  identifier = "legal"
+  name = "Legal"
+  weight = 3
+  url = "#"
+[[menu.main]]
+  parent = "legal"
   name = "Contact"
-  weight = 5
+  weight = 1
   url = "contact/"
-
 [[menu.main]]
+  parent = "legal"
   name = "Impressum"
-  weight = 6
+  weight = 2
   url = "impressum/"
-
 [[menu.main]]
+  parent = "legal"
   name = "Datenschutz"
-  weight = 7
+  weight = 3
   url = "datenschutz/"
 
 [module]

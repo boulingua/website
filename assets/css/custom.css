@@ -32,14 +32,90 @@ body.colorscheme-dark {
   --boulingua-rule: rgba(255, 255, 255, 0.16);
 }
 
-/* ── Navbar brand ───────────────────────────────── */
+/* ── Navbar brand (original boulingua icon + wordmark) ─ */
 .navigation .navigation-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-transform: lowercase;
   letter-spacing: 0.02em;
 }
+.navigation-brand-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: block;
+}
 
-.navigation .navigation-title::before {
-  content: "#";
+/* ── Grouped nav dropdowns ──────────────────────────── */
+.navigation-item.has-dropdown {
+  position: relative;
+}
+.navigation-group {
+  cursor: pointer;
+}
+.navigation-group .caret {
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+.navigation-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin: 0;
+  padding: 0.35rem 0;
+  min-width: 12rem;
+  list-style: none;
+  background: var(--boulingua-surface, #fff);
+  border: 1px solid var(--boulingua-panel-border, rgba(0, 0, 0, 0.12));
+  border-radius: 8px;
+  box-shadow: var(--boulingua-panel-shadow, 0 6px 20px rgba(0, 0, 0, 0.12));
+  z-index: 40;
+}
+.has-dropdown:hover .navigation-dropdown,
+.has-dropdown:focus-within .navigation-dropdown {
+  display: block;
+}
+.navigation-dropdown li {
+  margin: 0;
+}
+.navigation-dropdown a {
+  display: block;
+  padding: 0.45rem 1rem;
+  white-space: nowrap;
+  color: inherit;
+}
+.navigation-dropdown a:hover,
+.navigation-dropdown a:focus {
+  color: var(--boulingua-accent);
+  background: rgba(0, 0, 0, 0.04);
+}
+body.colorscheme-dark .navigation-dropdown {
+  background: #1c1f26;
+  border-color: rgba(255, 255, 255, 0.16);
+}
+body.colorscheme-dark .navigation-dropdown a:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+/* On the mobile (stacked) menu, show group children inline + indented. */
+@media (max-width: 683px) {
+  .navigation-item.has-dropdown {
+    position: static;
+  }
+  .navigation-dropdown {
+    display: block;
+    position: static;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    min-width: 0;
+    background: transparent;
+  }
+  .navigation-dropdown a {
+    padding-left: 1.5rem;
+    opacity: 0.85;
+  }
 }
 
 /* ── Home title (under avatar) ──────────────────── */
