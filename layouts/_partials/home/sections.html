@@ -1,0 +1,37 @@
+{{/* boulingua home: platform lead + sister-site cards (accent per language). */}}
+{{- $a := dict -}}{{- range site.Data.accents -}}{{- $a = merge $a (dict .code .accent) -}}{{- end -}}
+<section class="container home-lead">
+  <p class="home-lead-text">A free, openly licensed teaching platform for the German
+  Gesamtschule and CEFR learners — curriculum-aligned courses, ready-to-use materials,
+  and a curated resource hub. Open, ad-free, and built for the classroom and for
+  self-study.</p>
+</section>
+<section class="container home-cards-wrap">
+  <div class="home-cards">
+    <a class="home-card" style="--c:{{ index $a "efl" }}" href="https://boulingua.github.io/efl/">
+      <span class="home-card-code">EFL · English</span>
+      <span class="home-card-title">English as a Foreign Language</span>
+      <span class="home-card-desc">~180 units, Klassen 5–13, two tracks with G/M/E differentiation.</span>
+      <span class="home-card-go">Open the course ↗</span>
+    </a>
+    <a class="home-card" style="--c:{{ index $a "fle" }}" href="https://boulingua.github.io/fle/">
+      <span class="home-card-code">FLE · Français</span>
+      <span class="home-card-title">Français Langue Étrangère</span>
+      <span class="home-card-desc">~156 unités, classes 6–13, différenciation G/M/E.</span>
+      <span class="home-card-go">Open the course ↗</span>
+    </a>
+    <a class="home-card" style="--c:{{ index $a "daf" }}" href="https://boulingua.github.io/daf/">
+      <span class="home-card-code">DaF · Deutsch</span>
+      <span class="home-card-title">Deutsch als Fremdsprache</span>
+      <span class="home-card-desc">~60 Einheiten, Niveau A1–C1, nach GER-Stufen geordnet.</span>
+      <span class="home-card-go">Open the course ↗</span>
+    </a>
+    <a class="home-card" style="--c:#1A73E8" href="https://boulingua.github.io/ressources/">
+      <span class="home-card-code">Ressourcen-Hub</span>
+      <span class="home-card-title">Curated open teaching resources</span>
+      <span class="home-card-desc">48 free, openly-licensed resources for English, French and German.</span>
+      <span class="home-card-go">Browse resources ↗</span>
+    </a>
+  </div>
+  <p class="home-cards-more"><a href="{{ "platforms/" | relLangURL }}">Explore the whole language family on the world map →</a></p>
+</section>

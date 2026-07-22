@@ -1,0 +1,9 @@
+{{/* boulingua home — compact hero (avatar + wordmark + info + social), then
+     the platform lead and sister-site cards from home/sections.html. Overrides
+     the theme's full-height centered layout. */}}
+<section class="container home-top">
+  {{ partialCached "home/avatar.html" . }}
+  {{ partialCached "home/author.html" . }}
+  {{ partialCached "home/social.html" . }}
+</section>
+{{ partialCached "home/sections.html" . }}
