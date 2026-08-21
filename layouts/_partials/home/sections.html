@@ -1,5 +1,5 @@
 {{/* boulingua home: platform lead + sister-site cards (accent per language). */}}
-{{- $a := dict -}}{{- range site.Data.accents -}}{{- $a = merge $a (dict .code .accent) -}}{{- end -}}
+{{- $a := dict -}}{{- range hugo.Data.accents -}}{{- $a = merge $a (dict .code .accent) -}}{{- end -}}
 <section class="container home-cards-wrap">
   <div class="home-cards">
     <a class="home-card" style="--c:{{ index $a "efl" }}" href="https://boulingua.github.io/efl/">

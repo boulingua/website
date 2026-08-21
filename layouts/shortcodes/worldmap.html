@@ -1,7 +1,7 @@
 {{/* boulingua interactive language map. Grey shading = share of a country's
      inhabitants who speak an offered language (darker = more; approximate). A coloured
      dot marks the capital of every covered country. Natural Earth 110m, public domain. */}}
-{{- $acc := dict -}}{{- range site.Data.accents -}}{{- $acc = merge $acc (dict .code .accent) -}}{{- end -}}
+{{- $acc := dict -}}{{- range hugo.Data.accents -}}{{- $acc = merge $acc (dict .code .accent) -}}{{- end -}}
 <figure class="worldmap">
   <div class="worldmap-stage">
     <svg class="worldmap-svg" viewBox="0 20 1000 385" role="img" aria-label="World map of boulingua languages" preserveAspectRatio="xMidYMid meet">
@@ -16,7 +16,7 @@
     </div>
   </div>
   <ul class="worldmap-legend">
-    {{- range sort (where site.Data.worldmap "code" "!=" "lle") "status" -}}
+    {{- range sort (where hugo.Data.worldmap "code" "!=" "lle") "status" -}}
     {{- $c := index $acc .code -}}{{- with .colour -}}{{- $c = . -}}{{- end -}}
     <li class="wm-leg wm-{{ .status }}" data-code="{{ .code }}">
       <span class="wm-sw" style="background:{{ $c }}"></span>
