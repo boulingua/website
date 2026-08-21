@@ -41,7 +41,7 @@ Then open <http://localhost:1313/website/>.
 
 Boulingua is one platform with many languages. Each language project has **its own signature accent colour**, shown as a **pentagon** in that colour, so it is recognisable on its own while still part of the whole. Every accent is **flag-safe** (the hue does not appear in that language's national flag), mutually distinct (≥20° apart on the hue wheel), kept clear of the boulingua hub blue `#1A73E8`, and contrast-checked for light and dark themes. The shared CEFR ramp (A `#4CAF50`, B `#1A73E8`, C `#8E24AA`) is independent of these.
 
-The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same values drive the sites' CSS and the `slidegen` / `sheetgen` LaTeX templates. See the [Design & colours](https://boulingua.github.io/website/design/) page for a visual overview.
+The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same values drive the sites' CSS and the branded LaTeX templates in [`kit`](https://github.com/boulingua/kit) (`latex/`). See the [Design & colours](https://boulingua.github.io/website/design/) page for a visual overview.
 
 | Code | Language | Light accent | Dark accent |
 |------|----------|--------------|-------------|
