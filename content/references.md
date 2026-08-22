@@ -37,8 +37,6 @@ each respective subsite — see for example
 
 ## Tools and platforms
 
-- **[Quarto](https://quarto.org/)** — used to author the EFL, FLE,
-  DaF and Ressourcen-Hub subsites.
 - **[Hugo](https://gohugo.io/)** with the
   **[hugo-coder](https://github.com/luizdepra/hugo-coder)** theme
   — used for this landing page.
@@ -66,8 +64,8 @@ third parties for the self-hosted model.
 
 ## Licensing
 
-- Website code (Quarto config, Hugo templates, Lua filters,
-  Python helpers, SCSS): **MIT**.
+- Site code (Hugo templates and shortcodes, design tokens, LaTeX styles,
+  Python build and gate scripts, CSS): **MIT**.
 - Written content (units, exam exemplars, learning aims):
   **CC-BY-SA 4.0**.
 

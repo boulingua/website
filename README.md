@@ -43,6 +43,7 @@ Boulingua is one platform with many languages. Each language project has **its o
 
 The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same values drive the sites' CSS and the branded LaTeX templates in [`kit`](https://github.com/boulingua/kit) (`latex/`). See the [Design & colours](https://boulingua.github.io/website/design/) page for a visual overview.
 
+<!-- BEGIN generated accent table — design/build_tokens.py. Do not edit. -->
 | Code | Language | Light accent | Dark accent |
 |------|----------|--------------|-------------|
 | `daf` | German | `#1D87A7` | `#7ECEE7` |
@@ -57,11 +58,13 @@ The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same
 | `lle` | Latin | `#C72334` | `#E77E89` |
 | `nsf` | Norwegian | `#6D8618` | `#CEE77E` |
 | `nvt` | Dutch | `#198D34` | `#7EE797` |
+| `pfa` | Persian | `#B5892B` | `#E7C97E` |
 | `pfl` | Polish | `#AD701F` | `#E7B97E` |
 | `ple` | Portuguese | `#B723C7` | `#DC7EE7` |
 | `rki` | Russian | `#198D5B` | `#7EE7B9` |
 | `tfl` | Turkish | `#C7236A` | `#E77EAC` |
 | `ufl` | Ukrainian | `#C723A1` | `#E77ECE` |
+<!-- END generated accent table -->
 
 ## Licence
 

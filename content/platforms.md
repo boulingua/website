@@ -7,7 +7,7 @@ Boulingua consists of four sister sites. Three deliver curriculum-aligned
 teaching units for English, French, and German as a foreign language. The
 fourth is a curated hub of free teaching resources. Beyond these, a growing
 family of languages is being scaffolded — each with its own signature accent
-colour. The map below shades every country by the share of its inhabitants who
+colour, listed below. The map below shades every country by the share of its inhabitants who
 speak a boulingua language, with a coloured dot on each capital; the three live
 courses pulse and link straight to their site. Hover a country or capital for
 detail.
@@ -60,3 +60,12 @@ can quickly find what they need.
 For teachers of English, French, and German across all levels.
 
 Visit: [boulingua.github.io/ressources/](https://boulingua.github.io/ressources/)
+
+## In Vorbereitung
+
+Each of these has a repository, an accent colour, a brand mark and a roadmap.
+None has published units yet. They are listed from the same registry that
+drives the map above and the palette on the [design page](/design/), so this
+list cannot fall behind the platform.
+
+{{< languages >}}

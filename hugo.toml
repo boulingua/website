@@ -3,6 +3,7 @@ title = "boulingua"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = false
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 20
@@ -13,7 +14,17 @@ enableEmoji = false
 [markup.goldmark.renderer]
   unsafe = true
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [params]
+  # The site's own registry key. Every kit script that needs to know which
+  # accent, icon and LaTeX colour a repo owns reads this one value rather than
+  # inferring it from the directory name — five repos were checked out under a
+  # different name than their code at some point.
+  code = "hub"
+  license = "CC BY-SA 4.0"
   author = "S. Le Boulanger"
   description = "Multilingual Teaching · EFL · FLE · DaF"
   keywords = "language teaching,EFL,FLE,DaF,OER,CEFR,curriculum"
@@ -29,6 +40,12 @@ enableEmoji = false
   # Disable the theme's floating toggle; the navbar #dark-mode-toggle is the single control.
   hideColorSchemeToggle = true
   customCSS = ["css/custom.css"]
+
+[params.plausible]
+  # Gate C9 compares this against the data-domain the layout emits. Five repos
+  # each grew their own grep for this; the check lives in one place now.
+  enable = true
+  domain = "boulingua.github.io"
 
 [[params.social]]
   name = "GitHub"
@@ -84,7 +101,18 @@ enableEmoji = false
   name = "Datenschutz"
   weight = 3
   url = "datenschutz/"
+[[menu.main]]
+  parent = "legal"
+  name = "Haftungsausschluss"
+  weight = 4
+  url = "haftungsausschluss/"
 
 [module]
+  # Import order is load-bearing: hugo-coder supplies the base theme, kit
+  # overrides what the platform owns, and this repo's own layouts/ win over
+  # both. Reversing the first two makes the theme silently shadow every
+  # boulingua shortcode.
   [[module.imports]]
     path = "github.com/luizdepra/hugo-coder"
+  [[module.imports]]
+    path = "github.com/boulingua/kit"

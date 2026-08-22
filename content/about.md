@@ -24,7 +24,8 @@ Everything is dual-licensed: the website code under the MIT License, and the
 written content under Creative Commons Attribution-ShareAlike 4.0. Anyone can
 use, share, and adapt the materials with attribution.
 
-The four content sites are built with [Quarto](https://quarto.org/) and this
-landing page is built with [Hugo](https://gohugo.io/). All five repositories
+All five sites are built with [Hugo](https://gohugo.io/) and share one
+platform — the same layouts, design tokens and quality gates arrive from a
+single [kit](https://github.com/boulingua/kit) repository. All five repositories
 are hosted under the [boulingua GitHub organization](https://github.com/boulingua)
 and deployed via GitHub Pages.

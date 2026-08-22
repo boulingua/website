@@ -18,11 +18,21 @@ A language's accent must be:
    Colour should signal *which course you are in*, not which country a language
    is spoken in — a language is not a nation, and several of these are spoken
    across many.
-2. **At least 20° apart** from every other accent on the hue wheel, so two
-   courses are never mistaken for each other.
-3. **WCAG AA on white**, because it is used for links and rules, not decoration.
+2. **At least 15° apart** from every other accent on the OKLCH hue
+   wheel, so two courses are never mistaken for each other.
+3. **WCAG AA on white** — 4.5:1 — because an accent is used for links and rules,
+   not decoration.
 4. **Not hub blue** — `#1A73E8` is reserved for this umbrella site and for
    anything that belongs to no single course.
+
+### Where the palette does not meet them yet
+
+These rules are the specification, and this section is measured from the same
+file the table below is printed from — so it cannot quietly stop being true.
+
+**10 of 18 accents fall below 4.5:1 on white** (`pfa` 3.19:1, `ele` 4.06:1, `fle` 4.10:1, `pfl` 4.11:1, …). They are legible, but they do not meet AA at body-text size. Naming them here is the honest position while they are re-derived; the alternative was a page that claimed compliance the palette did not have.
+
+**8 pairs sit closer than 15°** (`efl`/`nvt` 4.5°, `efl`/`fle` 6.4°, `fle`/`nvt` 10.9°, …). The neighbouring greens are the pressure point: English, French, Dutch and Norwegian all want the same part of the wheel.
 
 ## The palette
 

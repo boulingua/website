@@ -1,83 +1,23 @@
-name: Deploy Hugo site to GitHub Pages
-
+# The caller. Byte-identical in every course, and deliberately so.
+#
+# The job body is `kit check --ci` and nothing else, and that is the contract:
+# if it passes locally it passes here, because this runs exactly it. Any gate
+# added to this file instead of to the battery breaks that property and is
+# caught by the kit's own drift test.
+#
+# There is no `with:` block. Everything configurable lives in the course's
+# boulingua.yml, read by the scripts themselves — which keeps this file a
+# constant, and a constant is drift-gatable.
+name: Build and deploy
 on:
-  push:
-    branches: [main]
+  push: { branches: [main] }
+  # Pull requests run the whole battery and publish nothing. The reusable
+  # workflow's deploy job is main-only and holds the write permissions on its
+  # own; nothing here can publish from a branch.
+  pull_request: { branches: [main] }
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-defaults:
-  run:
-    shell: bash
-
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: false }
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: "0.159.2"
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
-      - name: Set up Go
-        # Hugo Modules resolve the theme through the Go toolchain, so the
-        # version has to come from go.mod — never a literal that can drift.
-        uses: actions/setup-go@v5
-        with:
-          go-version-file: go.mod
-
-      - name: Install Hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb \
-            https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Install Node.js dependencies (if any)
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-
-      - name: Check for unfilled placeholders
-        run: |
-          if grep -n '\[PLACEHOLDER' content/impressum.md content/datenschutz.md; then
-            echo "::error::Impressum or Datenschutz contains [PLACEHOLDER...] markers. Fill them before deploying."
-            exit 1
-          fi
-
-      - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-          TZ: Europe/Berlin
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  course:
+    uses: boulingua/.github/.github/workflows/course-build.yml@v1
