@@ -1,0 +1,28 @@
+# boulingua.yml — the per-course configuration the gate battery reads.
+#
+# One file. The specifications had this split across a materials-profile.yml, a
+# gates: block in the workflow, and half a dozen hugo.toml params, which meant
+# three places to look and three places to disagree.
+
+code: hub
+kind: hub
+content_model: leaf-bundle
+
+# No slug block: this site has no units, no tracks and no ordinals. The two
+# slug: overrides it does carry are on ordinary pages.
+
+script_tier: core
+target_language: de
+chrome_language: de
+
+milestone: M0                   # no units, so the implements ramp never applies
+
+gates:
+  network_graph: false
+  pagefind: false
+  bildungsplan: false
+  curriculum: off               # a hub makes no conformance claim
+
+# No vgwort block. This site registers NO Zählmarken by design — it is
+# navigation, not the author's Sprachwerke — and gate C2 verifies that both
+# ways rather than accepting a missing lock as nothing to check.
