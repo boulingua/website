@@ -1,0 +1,24 @@
+# Shortcodes this repo ships that the kit does not.
+#
+# The set is closed, and closed means declared somewhere rather than declared
+# in the kit. Gate A19 reads this file alongside kit/shortcodes.yml and holds
+# these entries to the same four requirements: a renderer, a LaTeX emitter or a
+# written reason there is none, an accessibility contract, and the class it
+# owns.
+
+version: 1
+
+shortcodes:
+  - name: worldmap
+    kind: furniture
+    html: layouts/_shortcodes/worldmap.html
+    latex: null
+    latex_deferred: >-
+      Hub-only, and the LaTeX emitter never reads the hub — it globs unit
+      content. A world map has no worksheet form in any case.
+    owns: [worldmap, worldmap-dot, worldmap-tooltip]
+    a11y: >-
+      Each capital dot carries the language name as text, not colour alone, and
+      the three live courses link out from their dots. The map is decorative
+      relative to the list beneath it, which carries the same information in
+      reading order.
