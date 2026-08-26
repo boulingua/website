@@ -46,24 +46,24 @@ The single source of truth is [`data/accents.yaml`](data/accents.yaml); the same
 <!-- BEGIN generated accent table — design/build_tokens.py. Do not edit. -->
 | Code | Language | Light accent | Dark accent |
 |------|----------|--------------|-------------|
-| `daf` | German | `#1D87A7` | `#7ECEE7` |
-| `efl` | English | `#248D19` | `#89E77E` |
-| `fle` | French | `#4B8D19` | `#ACE77E` |
-| `afl` | Arabic | `#4A23C7` | `#977EE7` |
-| `cfl` | Chinese | `#2334C7` | `#7E89E7` |
-| `ele` | Spanish | `#198D81` | `#7EE7DC` |
-| `gfl` | Greek | `#C74A23` | `#E7977E` |
-| `ils` | Italian | `#8023C7` | `#B97EE7` |
-| `jfl` | Japanese | `#867B18` | `#E7DC7E` |
-| `lle` | Latin | `#C72334` | `#E77E89` |
-| `nsf` | Norwegian | `#6D8618` | `#CEE77E` |
-| `nvt` | Dutch | `#198D34` | `#7EE797` |
-| `pfa` | Persian | `#B5892B` | `#E7C97E` |
-| `pfl` | Polish | `#AD701F` | `#E7B97E` |
-| `ple` | Portuguese | `#B723C7` | `#DC7EE7` |
-| `rki` | Russian | `#198D5B` | `#7EE7B9` |
-| `tfl` | Turkish | `#C7236A` | `#E77EAC` |
-| `ufl` | Ukrainian | `#C723A1` | `#E77ECE` |
+| `daf` | German | `#0C7F9E` | `#80CDEA` |
+| `efl` | English | `#06881B` | `#83E883` |
+| `fle` | French | `#5C8000` | `#B8E474` |
+| `afl` | Arabic | `#5C16C0` | `#967EE8` |
+| `cfl` | Chinese | `#382DC6` | `#7B8AE7` |
+| `ele` | Spanish | `#008283` | `#7BE6E6` |
+| `gfl` | Greek | `#C74B1F` | `#E7977E` |
+| `ils` | Italian | `#871EC1` | `#B97EE7` |
+| `jfl` | Japanese | `#8C7208` | `#F3D77B` |
+| `lle` | Latin | `#C72238` | `#E87F7E` |
+| `nsf` | Norwegian | `#787900` | `#DFE173` |
+| `nvt` | Dutch | `#008558` | `#61EAAC` |
+| `pfa` | Persian | `#9E6A00` | `#F2C380` |
+| `pfl` | Polish | `#AA6322` | `#F0B486` |
+| `ple` | Portuguese | `#BA20C2` | `#DF7DE3` |
+| `rki` | Russian | `#008471` | `#6AE8CE` |
+| `tfl` | Turkish | `#C7236A` | `#EB7D9F` |
+| `ufl` | Ukrainian | `#CA209A` | `#ED7CC3` |
 <!-- END generated accent table -->
 
 ## Licence
