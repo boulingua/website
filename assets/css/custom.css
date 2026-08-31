@@ -76,7 +76,7 @@ body.colorscheme-dark {
 .home-top ul {
   margin-top: 0.5rem;
   list-style: none;
-  padding-left: 0;
+  padding-inline-start: 0;
   display: flex;
   justify-content: center;
   gap: 0.6rem;
@@ -150,7 +150,7 @@ body.colorscheme-dark {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  inset-inline-end: 0;
   margin: 0;
   padding: 0.35rem 0;
   min-width: 12rem;
@@ -201,7 +201,7 @@ body.colorscheme-dark .navigation-dropdown a:hover {
     background: transparent;
   }
   .navigation-dropdown a {
-    padding-left: 1.5rem;
+    padding-inline-start: 1.5rem;
     opacity: 0.85;
   }
 }
