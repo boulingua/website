@@ -19,3 +19,9 @@ Thumbs.db
 *.bak
 *.orig
 public_local/
+
+# Local refinement and preview
+.venv/
+go.work
+go.work.sum
+build/

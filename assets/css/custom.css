@@ -3,34 +3,7 @@
    `colorscheme-auto` defers to prefers-color-scheme until the user clicks the
    toggle. We support both. */
 
-:root {
-  --boulingua-accent: #1a73e8;
-  --boulingua-accent-hover: #0b57d0;
-  --boulingua-panel-border: rgba(0, 0, 0, 0.12);
-  --boulingua-panel-border-hover: var(--boulingua-accent);
-  --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  --boulingua-rule: rgba(0, 0, 0, 0.12);
-}
-
-/* Dark via OS preference when Coder is in auto mode */
-@media (prefers-color-scheme: dark) {
-  body.colorscheme-auto {
-    --boulingua-accent: #79b8ff;
-    --boulingua-accent-hover: #b8d4fd;
-    --boulingua-panel-border: rgba(255, 255, 255, 0.16);
-    --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-    --boulingua-rule: rgba(255, 255, 255, 0.16);
-  }
-}
-
-/* Dark when Coder JS has applied colorscheme-dark explicitly */
-body.colorscheme-dark {
-  --boulingua-accent: #79b8ff;
-  --boulingua-accent-hover: #b8d4fd;
-  --boulingua-panel-border: rgba(255, 255, 255, 0.16);
-  --boulingua-panel-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-  --boulingua-rule: rgba(255, 255, 255, 0.16);
-}
+body{--boulingua-accent:var(--boulingua-hub);--boulingua-accent-hover:var(--boulingua-hub-hover)}
 
 /* ── Navbar brand (original boulingua icon + wordmark) ─ */
 .navigation .navigation-title {
@@ -111,7 +84,7 @@ body.colorscheme-dark {
   flex-direction: column;
   gap: 0.3rem;
   padding: 1.1rem 1.25rem;
-  border: 1px solid var(--boulingua-panel-border, rgba(0, 0, 0, 0.12));
+  border: 1px solid var(--boulingua-panel-border);
   border-top: 3px solid var(--c);
   border-radius: 10px;
   text-decoration: none;
@@ -120,19 +93,19 @@ body.colorscheme-dark {
 }
 .home-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--boulingua-panel-shadow, 0 6px 18px rgba(0, 0, 0, 0.08));
+  box-shadow: var(--boulingua-panel-shadow);
   border-color: var(--c);
 }
 .home-card-code {
-  font-size: 0.72rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--c);
 }
-.home-card-title { font-weight: 600; font-size: 1.05rem; }
-.home-card-desc { font-size: 0.88rem; opacity: 0.75; line-height: 1.45; }
-.home-card-go { font-size: 0.85rem; color: var(--c); margin-top: 0.25rem; }
+.home-card-title { font-weight: 600; font-size: 1.68rem; }
+.home-card-desc { font-size: 1.408rem; opacity: 0.75; line-height: 1.45; }
+.home-card-go { font-size: 1.36rem; color: var(--c); margin-top: 0.25rem; }
 .home-cards-more { text-align: center; margin-top: 1.4rem; }
 
 /* ── Grouped nav dropdowns ──────────────────────────── */
@@ -155,10 +128,10 @@ body.colorscheme-dark {
   padding: 0.35rem 0;
   min-width: 12rem;
   list-style: none;
-  background: var(--boulingua-surface, #fff);
-  border: 1px solid var(--boulingua-panel-border, rgba(0, 0, 0, 0.12));
+  background: var(--boulingua-surface);
+  border: 1px solid var(--boulingua-panel-border);
   border-radius: 8px;
-  box-shadow: var(--boulingua-panel-shadow, 0 6px 20px rgba(0, 0, 0, 0.12));
+  box-shadow: var(--boulingua-panel-shadow);
   z-index: 40;
 }
 .has-dropdown:hover .navigation-dropdown,
@@ -177,14 +150,14 @@ body.colorscheme-dark {
 .navigation-dropdown a:hover,
 .navigation-dropdown a:focus {
   color: var(--boulingua-accent);
-  background: rgba(0, 0, 0, 0.04);
+  background: var(--boulingua-surface);
 }
 body.colorscheme-dark .navigation-dropdown {
-  background: #1c1f26;
-  border-color: rgba(255, 255, 255, 0.16);
+  background: var(--boulingua-surface);
+  border-color: var(--boulingua-surface);
 }
 body.colorscheme-dark .navigation-dropdown a:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--boulingua-surface);
 }
 /* On the mobile (stacked) menu, show group children inline + indented. */
 @media (max-width: 683px) {
@@ -248,7 +221,7 @@ main.content h2:hover,
 
 /* ── Footer ─────────────────────────────────────── */
 .footer {
-  font-size: 0.9rem;
+  font-size: 1.44rem;
 }
 
 /* ── Philosophy panel grid ──────────────────────── */
@@ -299,12 +272,12 @@ main.content h2:hover,
 
 .philosophy-panel h3 {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.84rem;
 }
 
 .philosophy-panel p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.52rem;
   line-height: 1.55;
 }
 
@@ -324,7 +297,7 @@ main.content h2:hover,
   padding: 0 0.5rem; display: inline-flex; align-items: center; line-height: 1;
 }
 .colorscheme-toggle:hover,
-.colorscheme-toggle:focus-visible { color: var(--boulingua-accent, currentColor); }
+.colorscheme-toggle:focus-visible { color: var(--boulingua-accent); }
 .colorscheme-toggle .cs-icon { display: inline-block; vertical-align: middle; }
 .colorscheme-toggle .cs-icon--sun { display: none; }
 body.colorscheme-dark .colorscheme-toggle .cs-icon--moon { display: none; }

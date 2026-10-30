@@ -26,3 +26,14 @@ gates:
 # No vgwort block. This site registers NO Zählmarken by design — it is
 # navigation, not the author's Sprachwerke — and gate C2 verifies that both
 # ways rather than accepting a missing lock as nothing to check.
+
+# Course/product-specific views; select by layout, independent of URLs.
+templates:
+  selection: layout
+  local:
+  - _partials/header.html
+  - _partials/home.html
+  - _partials/home/author.html
+  - _partials/home/extensions.html
+  - _partials/home/sections.html
+  - _shortcodes/worldmap.html

@@ -45,7 +45,7 @@ enableRobotsTXT = true
   colorScheme = "auto"
   # Disable the theme's floating toggle; the navbar #dark-mode-toggle is the single control.
   hideColorSchemeToggle = true
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/tokens.css", "css/custom.css"]
 
 [params.plausible]
   # Gate C9 compares this against the data-domain the layout emits. Five repos

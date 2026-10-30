@@ -76,7 +76,7 @@ Machine-readable metadata is provided in each subsite's
 
 > Le Boulanger, S. (2026). *Boulingua — Multilingual Teaching
 > Platform (EFL · FLE · DaF · Ressourcen).* boulingua.
-> <https://boulingua.github.io/>
+> <https://boulingua.github.io/website/>
 
 BibTeX:
 
@@ -88,7 +88,7 @@ BibTeX:
                    DaF {\textperiodcentered} Ressourcen)}},
   year         = {2026},
   howpublished = {boulingua},
-  url          = {https://boulingua.github.io/},
+  url          = {https://boulingua.github.io/website/},
   note         = {MIT (code) / CC-BY-SA 4.0 (content)}
 }
 ```
