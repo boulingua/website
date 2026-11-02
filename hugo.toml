@@ -50,8 +50,8 @@ enableRobotsTXT = true
 [params.plausible]
   # Gate C9 compares this against the data-domain the layout emits. Five repos
   # each grew their own grep for this; the check lives in one place now.
-  enable = true
   domain = "boulingua.github.io"
+  src = "https://analytics.hellebo.de/js/script.file-downloads.outbound-links.js"
 
 [[params.social]]
   name = "GitHub"

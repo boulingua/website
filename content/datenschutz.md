@@ -2,6 +2,9 @@
 title: "Datenschutzerklärung"
 date: 2025-01-01
 slug: "datenschutz"
+analytics_policy: plausible
+analytics_notice_language: de
+analytics_notice_path: /datenschutz/
 ---
 
 ## 1. Verantwortliche Stelle
@@ -26,22 +29,19 @@ verarbeitet. Einzelheiten entnehmen Sie bitte der Datenschutzerklärung von
 GitHub:
 [https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-## 3. Reichweitenmessung mit Plausible Analytics
+## 3. Plausible Analytics
 
-Diese Website nutzt Plausible Analytics, eine datenschutzfreundliche,
-cookielose Web-Analyse-Software. Plausible wird selbst auf einem Server in
-Deutschland (`analytics.hellebo.de`) betrieben; eine Datenübertragung an
-Dritte findet nicht statt. Plausible setzt keine Cookies und legt keine
-geräteübergreifenden Profile an. Aus den Zugriffsdaten werden ausschließlich
-aggregierte Statistiken zur Reichweite (z. B. Seitenaufrufe, Verweisquellen,
-Geräteklasse, Land) erzeugt. IP-Adressen werden nicht gespeichert; zur
-Wiedererkennung von Sitzungen wird ein täglich rotierender, nicht
-zurückrechenbarer Hashwert verwendet. Eine Identifikation einzelner
-Personen ist damit ausgeschlossen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
-DSGVO; das berechtigte Interesse liegt in der statistischen Auswertung des
-Nutzungsverhaltens zur Verbesserung des Angebots. Weitere Informationen
-unter
-[https://plausible.io/data-policy](https://plausible.io/data-policy).
+Auf dieser Website ist Plausible Analytics aktiviert.
+Das Analyseskript wird von `https://analytics.hellebo.de/js/script.file-downloads.outbound-links.js` geladen. Die Aufrufe werden der
+Kennung `boulingua.github.io` zugeordnet. Vorgesehen sind Seitenaufrufe,
+Dateidownloads und Klicks auf externe Links. Der Browser kontaktiert dafür
+die selbst gehostete Instanz unter `analytics.hellebo.de`.
+
+Für Auskünfte zum Betrieb dieser Instanz, zur Verarbeitung und zur
+Aufbewahrungsdauer wenden Sie sich an die oben genannte verantwortliche
+Stelle. Die [Dokumentation der Software](https://plausible.io/data-policy)
+beschreibt Plausible allgemein; sie bestätigt nicht die konkrete
+Serverkonfiguration dieses Angebots.
 
 ## 4. VG Wort Zählpixel (METIS)
 
