@@ -33,7 +33,7 @@ GitHub:
 
 Auf dieser Website ist Plausible Analytics aktiviert.
 Das Analyseskript wird von `https://analytics.hellebo.de/js/script.file-downloads.outbound-links.js` geladen. Die Aufrufe werden der
-Kennung `boulingua.github.io` zugeordnet. Vorgesehen sind Seitenaufrufe,
+Kennung `boulingua.github.io/website` zugeordnet. Vorgesehen sind Seitenaufrufe,
 Dateidownloads und Klicks auf externe Links. Der Browser kontaktiert dafür
 die selbst gehostete Instanz unter `analytics.hellebo.de`.
 
